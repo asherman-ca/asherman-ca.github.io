@@ -1,87 +1,45 @@
 <!DOCTYPE HTML>
-
 <html>
 	<head>
 		<title>Alex Sherman</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body id="top">
-
-		<!-- Header -->
-			<header id="header">
-				<div class="content">
-					<h1>Alex Sherman</h1>
-					<p>Full Stack engineer<br />
-					specializing in JavaScript and Ruby on Rails</p>
-					<ul class="actions">
-						<li><a href="#one" class="button icon fa-chevron-down scrolly">Learn More</a></li>
-					</ul>
-				</div>
-				<div class="image phone"><div class="inner"><img src="images/Alex_Sherman.jpg" alt="" /></div></div>
-			</header>
-
-		<!-- One -->
-			<section id="one" class="wrapper style2 special">
-				<header class="major">
-					<h2>Background</h2>
-				</header>
-				<p style="width: 50%; margin: 0 auto">
-My name is Alex Sherman and I'm a software engineer living in San Francisco. I have a background in Economics and broadcast engineering but my passion has always been computers - coding my first website in 6th grade, building my first computer in 7th grade and learning to build with C at various summer programs. Once I discovered that there was a pathway into software development for someone of my background, I began studying code and developing projects. In my time programming I've become proficient in several languages and have built full-stack applications. I'm most fascinated with front-end technologies and enjoy challenging myself to learn new techniques.
-				</p>
-			</section>
-
-		<!-- Two -->
-			<section id="two" class="wrapper">
-				<header class="major">
-					<h2>Projects</h2>
-				</header>
-				<div class="inner alt">
-					<section class="spotlight">
-						<div class="image" style="height: 250px; width: 150px"><img style="height: 250px; width: 150px" src="images/ezsearch.png" alt="" /></div>
-						<div class="content">
-							<a href="https://github.com/davidhu2000/eezee"><h3 style="text-decoration:underline">eZ Search</h3></a>
-							<p>Ez is a mobile application developed in collaboration between David Hu, Tom Ogasawara and myself. Currently available on the Google Play store - Ez allows users to determine the streaming location of a desired peice of media with one search. This project required my team to learn React Native in a weekend and build a cross-platform application.</p>
-						</div>
+	<body class="is-loading">
+			<div id="wrapper">
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/Alex_Sherman.jpg" alt="" /></span>
+							<h1>Alex Sherman</h1>
+							<p>Full Stack Software Engineer</p>
+						</header>
+						<footer>
+							<ul class="icons">
+								<li><a href="https://github.com/asherman-ca" class="fa-github">github</a></li>
+								<li><a href="https://www.linkedin.com/in/alex-sherman-1ba03649/" class="fa-linkedin">linkedin</a></li>
+								<li><a href="https://docs.google.com/document/d/14ZbsTLVMZQefG1T5meRAqxubpzR4tp6gdLnyD0CEibM/edit" class="fa-file-text">resume</a></li>
+							</ul>
+						</footer>
 					</section>
-					<section class="spotlight">
-						<div class="image"><img src="images/mop.jpeg" alt="" /></div>
-						<div class="content">
-							<a href="http://www.myonlinepool.com/"><h3 style="text-decoration:underline">MyOnlinePool</h3></a>
-							<p>MyOnlinePool.com is a social application developed in collaboration with David Hu. Designed, written and deployed in under three months - this project allows groups of users to organize betting pools.</p>
-						</div>
-					</section>
-					<section class="spotlight">
-						<div class="image"><img src="images/swatchbook.png" alt="" /></div>
-						<div class="content">
-							<a href="http://www.asherman.online/swatchbook/"><h3 style="text-decoration:underline">Swatchbook</h3></a>
-							<p>Swatchbook is a twelve hour project that allowed me to explore several frontend design features. It uses almost entirely html and css to showcase a range of frontend functionality.</p>
-						</div>
-					</section>
-				</div>
-			</section>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/alex-sherman-1ba03649" class="icon fa-linkedin"><span class="label">Dribbble</span></a></li>
-					<li><a href="https://github.com/asherman-ca" class="icon fa-github"><span class="label">Github</span></a></li>
-					<li><a href="https://angel.co/alex-sherman-7" class="icon fa-angellist"><span class="label">Github</span></a></li>
-					<li><a href="https://docs.google.com/document/d/1-XKPICiTYOEc8duXo3LcEUFszdbUKCTncksK743UDvI/edit?usp=sharing" class="icon fa-file-text"><span class="label">Dribbble</span></a></li>
-				</ul>
-			</footer>
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Alex Sherman</li>
+						</ul>
+					</footer>
+			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
+			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
 	</body>
 </html>
