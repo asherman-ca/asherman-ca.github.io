@@ -1,45 +1,131 @@
-<!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Alex Sherman</title>
+  <head>
+    <title>Alex Sherman</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-loading">
-			<div id="wrapper">
-					<section id="main">
-						<header>
-							<span class="avatar"><img src="images/Alex_Sherman.jpg" alt="" /></span>
-							<h1>Alex Sherman</h1>
-							<p>Full Stack Software Engineer</p>
-						</header>
-						<footer>
-							<ul class="icons">
-								<li><a href="https://github.com/asherman-ca" class="fa-github">github</a></li>
-								<li><a href="https://www.linkedin.com/in/alex-sherman-1ba03649/" class="fa-linkedin">linkedin</a></li>
-								<li><a href="https://docs.google.com/document/d/1eeZfR_B5Nz4n-qSTRY7UJB-w7RzM9v6eH2d4JxSerjE/edit?usp=sharing" class="fa-file-text">resume</a></li>
-							</ul>
-						</footer>
-					</section>
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Alex Sherman</li>
-						</ul>
-					</footer>
-			</div>
+    <script src="https://kit.fontawesome.com/ad537fa64b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="bodyContainer">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&display=swap');
+    </style>
+    <div class="navContainer">
+      <div class="subject">Alex Sherman</div>
+      <div class="navSubContainer header grey">
+        <a class="button" href="https://github.com/asherman-ca"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/alex-sherman-1ba03649/">
+          <i class="fa-brands fa-linkedin button"></i>
+        </a>
+        <a class="button" href="https://www.instagram.com/alxshrman/"><i class="fa-brands fa-instagram"></i></a>
+        
+      </div>
+    </div>
+    <div class="mainContainer">
+      <!-- job section -->
+      <div class="jobContainer">
+        <div class="header">Roles</div>
 
-		<!-- Scripts -->
-			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
-	</body>
+        <div class="card">
+          <div class="cardHeader subHeader">
+            Nurx - <span class="cardHeaderSpan">Software Engineer</span>
+          </div>
+          <div class="cardText">
+            - Created Ember components and added functionality to user-facing web app
+            <br>
+            - Wrote integration and unit tests for new features
+            <br>
+            - Automated synthetic tests using New Relic
+            <br>
+            - Developed and implemented scalable design patterns across platforms
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardHeader subHeader">
+            App Academy - <span class="cardHeaderSpan">Teaching Assistant / Admissions</span>
+          </div>
+          <div class="cardText">
+            - Taught Ruby to prospective students through one-on-one support 
+            <br>
+            - Introduced programming concepts in lectures of 30+ students
+            <br>
+            - Administered coding examinations in technical interviews
+          </div>
+        </div>
+
+      </div>
+
+      <!-- project section -->
+      <div class="projectContainer">
+        <div class="header">Projects</div>
+
+        <div class="card">
+          <div class="cardHeader subHeader">
+            Miyagi.tech - <span class="cardHeaderSpan">React, Firebase, Bootstrap</span> - <a href="miyagi.tech"><i class="fa-solid fa-arrow-up-right-from-square button"></i></a>
+          </div>
+          <div class="cardText">
+            - Created multiple search options on explore page to enable content discovery
+            <br>
+			      - Created like and follow features to enable content interaction
+            <br>
+			      - Enabled YouTube and Instragram integrations on user posts
+            <br>
+		        - Responsively structured each page to allow seamless cross-device UX
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardHeader subHeader">
+            MyOnlinePool - <span class="cardHeaderSpan">React, Rails, SQL</span>
+          </div>
+          <div class="cardText">
+            - Updated score data through queries to the NFL's api
+            <br>
+			      - Processed payment through hand rolled paypal implementation
+            <br>
+            - Utilized React best practices and architecture to implement a responsive and modular  frontend user experience
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardHeader subHeader">
+            Ez Streaming Service - <span class="cardHeaderSpan">React-native, Firebase</span>
+          </div>
+          <div class="cardText">
+            - Created a cohesive UI using React-native's integrated styling attributes
+            <br>
+            - Queried GuideBox API to access multiple services in a single API call and reduce backend complexity
+          </div>
+        </div>
+      </div>
+
+      <!-- education section -->
+      <div class="eduContainer">
+        <div class="header">Education</div>
+
+        <div class="card">
+          <div class="cardHeader subHeader">
+            App academy
+          </div>
+          <div class="cardText">
+            - 1000 hour full stack web development curriculum, 3% acceptance rate			
+          </div>
+        </div>
+      
+
+      <div class="card">
+        <div class="cardHeader subHeader">
+          Union College
+        </div>
+        <div class="cardText">
+          - BA major in economics
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+
+  </body>
 </html>
