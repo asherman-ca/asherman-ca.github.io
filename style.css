@@ -107,6 +107,7 @@ table {
   color: black;
   display: flex;
   flex-direction: column;
+  overflow-y: overlay;
   /* font-family: 'Robot', sans-serif; */
 }
 
