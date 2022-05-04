@@ -107,8 +107,13 @@ table {
   color: black;
   display: flex;
   flex-direction: column;
-  align-items: center;
   /* font-family: 'Robot', sans-serif; */
+}
+
+@media (min-width: 780px) {
+  .bodyContainer {
+    /* align-items: center; */
+  }
 }
 
 .navContainer {
@@ -120,8 +125,15 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 0; */
-  /* margin: 0 auto; */
+  margin: 0 auto;
+}
+
+@media (max-width: 780px) {
+  .navContainer {
+    width: 100%;
+    padding: 0px 10px;
+    margin: 0;
+  }
 }
 
 .navSubContainer {
@@ -132,11 +144,19 @@ table {
 .mainContainer {
   width: 60%;
   max-width: 780px;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem;
+  /* margin-bottom: 2rem; */
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  /* margin: 2rem auto; */
+}
+
+@media (max-width: 780px) {
+  .mainContainer {
+    width: 100%;
+    margin: 0 0 2rem;
+    padding: 0px 10px;
+  }
 }
 
 .projectContainer, .jobContainer, .eduContainer {
