@@ -187,6 +187,10 @@ table {
   color: var(--clr-grey);
 }
 
+.card:hover .cardText{
+  background-color: aliceblue;
+}
+
 .cardHeaderSpan {
   font-style: italic;
   font-size: .9rem;
