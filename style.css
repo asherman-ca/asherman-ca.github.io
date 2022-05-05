@@ -187,8 +187,13 @@ table {
   color: var(--clr-grey);
 }
 
-.card:hover .cardText{
-  background-color: aliceblue;
+.cardLine {
+  display: flex;
+  flex-direction: row;
+}
+
+.cardLine div:nth-child(1) {
+  margin-right: .25rem;
 }
 
 .cardHeaderSpan {
