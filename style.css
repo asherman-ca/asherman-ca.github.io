@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&family=Ubuntu&family=Water+Brush&display=swap');
+
 /* 
    CSS RESET
    http://meyerweb.com/eric/tools/css/reset/ 
@@ -61,13 +63,15 @@ table {
 }
 
 .subject {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
+  /* font-family: 'Water Brush', cursive; */
 }
 
 .header {
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 500;
+  /* font-family: 'Water Brush', cursive; */
 }
 
 .subHeader {
@@ -111,7 +115,9 @@ table {
   /* padding: 0 10px; */
   line-height: 1.5rem;
   font-size: 1rem;
-  font-family: "benton-sans", sans-serif;
+  /* font-family: "benton-sans", sans-serif; */
+  font-family: 'Ubuntu', sans-serif;
+
 	font-weight: 300;
   color: black;
   display: flex;
